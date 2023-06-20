@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.centered {
+    background-color: #D6DADE;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    padding: 20px;
+    height: 100%;
+    max-width: 600px;
+}
+  
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Change this value to the width you want */
+    height: 300px; /* Change this value to the height you want */
+    margin: 0 auto;
+    
+}
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 140px;
+    /* border-radius: 10px; Add rounded corners */
+    border: 1px solid #000000; /* Add a border */
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+  
+.main-title {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+  
+.login-btn:hover {
+    background-color: #140058;
+    color: #fff;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logout-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+.logout-btn a:hover{
+  background-color: #000;
+  color: #fff;
+}
+  
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-top: 100px;
+    background-color: #140058;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+  
+.links a:hover {
+    background-color: #4d20e3;
+}
+ 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"],
+  input[type="file"]{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder {
+    color: #999;
+  }
+  /* input[type="text"] {
+    text-transform: uppercase;
+  } */
+  button[type="submit"] {
+    background-color: #4097f5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background-color: #140058;
+  }
+
+
+
+.left-window{
+  width: 15%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  width: 85%;
+  height: 100%;
+  background-color: #E7EFF8;
+  position: fixed ;
+  
+}
+
+.dash-centre{
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+  top: 2%;
+  height: 80%;
+  padding: 30px;
+  margin-left: 1%;
+  position: relative;
+  border-radius: 8px;
+  width: 98%;
+  display: flex;
+  box-sizing: border-box;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.btns a:hover{
+background-color: #000;
+color: #fff;
+}
