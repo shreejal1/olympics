@@ -15,6 +15,26 @@ require('database.php');
 
   <body>
     <div class="centered">
+
+    <?php
+if(isset($_POST['upt'])){
+  unset($_POST['upt']);
+  $id = $_GET['id'];
+  $password = $_POST['password'];
+  $cp = $_POST['cpassword'];
+  if($password === $cp){
+    $sql = $pdo->query("update user set password = '$password' where username = '$id'");
+    if($sql){
+      header("Location: login.php");
+      exit();
+    }
+  }
+  else{
+    echo "Passwords do not match!!!";
+  }
+}
+    ?>
+
     <?php
 if(isset($_POST['reg'])){
   unset($_POST['reg']);
@@ -48,7 +68,29 @@ if(isset($_POST['reg'])){
   }
 }
 ?>
-    <h4 style="font-family:helvetica">*All fields required</h4>
+<?php
+    if(isset($_GET['id'])){
+      $usr = $_GET['id'];
+      $sql = $pdo->query("select * from user where username = '$usr'");
+      $rd = $sql->fetch();
+
+    echo '<h4 style="font-family:helvetica">Password Recovery</h4>
+      <form action="" method="POST">
+        <input type="text" name="name" placeholder="Full name*" value="'.$rd['fullname'].'" disabled/>
+        <input type="text" name="email" placeholder="Username or Email*" value="'.$rd['username'].'" disabled/>
+        <input type="password" name="password" placeholder="Password*" required/>
+        <input type="password" name="cpassword" placeholder="Confirm Password*" required/>
+        <input type="text" name="squestion" placeholder="Security Question*" value="'.$rd['squestion'].'" disabled/>
+        <input type="text" name="sanswer" placeholder="Answer*" value="'.$rd['sanswer'].'" disabled/>
+
+      
+
+      <div class="links">
+        <button type="submit" name="upt">Update Password</button>
+      </div>
+      </form>';
+    }else if(!isset($_GET['id'])){
+      echo '<h4 style="font-family:helvetica">*All fields required</h4>
       <form action="" method="POST">
         
         <input type="text" name="name" placeholder="Full name*" required/>
@@ -64,7 +106,9 @@ if(isset($_POST['reg'])){
         <button type="submit" name="reg">Register</button>
       </div>
       <br><a href="login.php">Already have an account?</a>
-      </form>
+      </form>';
+    }
+      ?>
     </div>
 
   </body>
