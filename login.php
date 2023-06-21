@@ -41,7 +41,9 @@ if(isset($_POST['submitBtn'])){
     $data = $sql->fetch();
     $rc = $sql->rowCount();
     if($rc > 0){
-        header("Location: index.php");
+        header("Location: home.php");
+		$_SESSION['id'] = $email;
+		exit();
     }
     else{
         echo "<h4 style='font-family:helvetica; color:#d42e11;'>Username or Password doesn't match, Try again.</h4>";

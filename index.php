@@ -20,6 +20,9 @@
         <a href="./login.php" class="login-btn">Login</a>
         <a href="./register.php" class="login-btn" style="margin-right:5px; margin-left:5px;">Register</a>
     </div>
+    <div class="links">
+        <a href="./home.php">Proceed as guest- Home</a>
+      </div>
 
    
     </div>

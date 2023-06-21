@@ -78,8 +78,8 @@ if(isset($_POST['reg'])){
       <form action="" method="POST">
         <input type="text" name="name" placeholder="Full name*" value="'.$rd['fullname'].'" disabled/>
         <input type="text" name="email" placeholder="Username or Email*" value="'.$rd['username'].'" disabled/>
-        <input type="password" name="password" placeholder="Password*" required/>
-        <input type="password" name="cpassword" placeholder="Confirm Password*" required/>
+        <input type="password" name="password" placeholder="New Password*" required/>
+        <input type="password" name="cpassword" placeholder="Confirm New Password*" required/>
         <input type="text" name="squestion" placeholder="Security Question*" value="'.$rd['squestion'].'" disabled/>
         <input type="text" name="sanswer" placeholder="Answer*" value="'.$rd['sanswer'].'" disabled/>
 
