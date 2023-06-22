@@ -29,6 +29,7 @@ require('database.php');
 				</form>
                 <div class="links">
         <a href="./forgot-pass.php">Forgot Password?</a>
+		<a href="./home.php">Guest Login</a>
       </div>
                 <?php
 if(isset($_POST['submitBtn'])){

@@ -1,7 +1,54 @@
 <?php
-require('header.php');
-// echo $_SESSION['id'];
+require('database.php');
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Live</title>
+</head>
+<body>
+    
+    <div class="nav">
+    <div class="logoo">
+    <img id="logoo" src="./images/logoo.png" />
+    </div>
+        <a href="home.php">Home</a>
+        <a href="news.php">News</a>
+        <a href="video.php" id="clicked">Live</a>
+        <a href="schedule.php">Schedule</a>
+        <a href="sports.php">Sports</a>
+        <?php
+            if(isset($_SESSION['id'])){
+            $id = $_SESSION['id'];
+            $sql = $pdo->query("select fullname from user where username = '$id'");
+            $rd = $sql->fetch();
+            echo '<a onclick="return clicklogout()" href="logout.php">'.$rd['fullname'].'-Logout</a>';
+            echo '
+            <script>
+function clicklogout() {
+var result = confirm("Are you sure to log out?");
+if (result == true) {
+return true;
+} else {
+return false;
+}
+}
+</script>';
+
+
+
+
+            }else{
+                echo '<a href="login.php">Login</a>';
+            }
+        ?>
+    </div>
+    
+</body>
+</html>
 <?php
 if(isset($_POST['submitBtn'])){
     if(isset($_SESSION['id'])){
@@ -42,7 +89,7 @@ if(isset($_POST['submitBtn'])){
                 $resultSet = $sql->fetchAll(PDO::FETCH_ASSOC);
                 if($rc > 0){
                     foreach($resultSet as $cmts){
-                    echo "<input type='text' value='".$cmts['user']." said: ".$cmts['comment']."' disabled>";
+                    echo "<input type='text' value='".$cmts['user'].": ".$cmts['comment']."' disabled>";
                     }
                 }else{
                     echo "No any comment, be the first to comment.";

@@ -14,6 +14,7 @@ require('database.php');
 
   <body>
     <div class="centered">
+    <a href="./index.php" class="login-btn">Exit</a>
     <h1 class="main-title">Account Recovery</h1>
       <!-- <div class="image-container">
         <img src="./logo.jpg" />
@@ -21,6 +22,7 @@ require('database.php');
 
     <div class="container">
     <div class="login-container">
+      
         
 </div>
     </div>
@@ -70,7 +72,7 @@ require('database.php');
               exit();
           }
           else{
-            echo "Answer didn't matched";
+            echo "Answer didn't match";
           }
         }
 
