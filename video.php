@@ -60,7 +60,8 @@ if(isset($_POST['submitBtn'])){
     $fnm = $fn['fullname'];
     $ins = $pdo->query("insert into comments(comment, user) values('$comment', '$fnm') ");
     if($ins){
-        header('Location: video.php');
+        echo "<script>window.location.href='video.php'</script>";
+        // header('Location: video.php');
         exit();
     }
     else{

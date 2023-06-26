@@ -68,7 +68,8 @@ require('database.php');
           $sql = $pdo->query("select * from user where username = '$email'");
           $rd = $sql->fetch();
           if(strtolower($_POST['ans']) == strtolower($rd['sanswer'])){
-              header("Location: register.php?id=$email");
+            echo "<script>window.location.href='register.php?id=$email'</script>";
+              // header("Location: register.php?id=$email");
               exit();
           }
           else{

@@ -42,7 +42,8 @@ if(isset($_POST['submitBtn'])){
     $data = $sql->fetch();
     $rc = $sql->rowCount();
     if($rc > 0){
-        header("Location: home.php");
+		echo "<script>window.location.href='home.php'</script>";
+        // header("Location: home.php");
 		$_SESSION['id'] = $email;
 		exit();
     }

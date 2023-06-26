@@ -69,7 +69,7 @@ if(isset($_SESSION['id'])){
 }
 else{
   echo '<a href="./login.php" id="slink">Login to your account 👤</a>';
-  echo '<a href="./video.php" id="slink">Get your account now ☑️</a><br><br>';
+  echo '<a href="./register.php" id="slink">Get your account now ☑️</a><br><br>';
 }
 ?>
 

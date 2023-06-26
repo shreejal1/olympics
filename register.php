@@ -53,7 +53,8 @@ if(isset($_POST['reg'])){
     if($rc < 1){
       $ins = $pdo->query("insert into user values('$name', '$username', '$password', '$sq', '$sa', '$country')");
       if($ins){
-        header("Location: login.php");
+        echo "<script>window.location.href='login.php'</script>";
+        // header("Location: login.php");
         exit();
       }
       else{
