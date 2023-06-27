@@ -20,6 +20,20 @@ require('database.php');
         <a href="video.php" id="clicked">Live</a>
         <a href="schedule.php">Schedule</a>
         <a href="sports.php">Sports</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!-- <script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script> -->
+<script src="script.js"></script>
         <?php
             if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];
@@ -77,7 +91,7 @@ if(isset($_POST['submitBtn'])){
 <div class="vid">
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zMFb8Y2QLPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zMFb8Y2QLPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="75%" height="315" src="https://www.youtube.com/embed/zMFb8Y2QLPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <div class="centered">

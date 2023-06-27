@@ -20,6 +20,20 @@ require('database.php');
         <a href="video.php">Live</a>
         <a href="schedule.php" id="clicked">Schedule</a>
         <a href="sports.php">Sports</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!-- <script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script> -->
+<script src="script.js"></script>
         <?php
             if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];

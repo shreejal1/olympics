@@ -24,16 +24,7 @@ require('database.php');
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  <script>
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
-  }
-}
-</script>
+
         <?php
             if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];
@@ -104,6 +95,7 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+<script src="script.js"></script>
 <?php
 require('footer.php');
 ?>

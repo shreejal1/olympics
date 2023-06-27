@@ -20,6 +20,19 @@ require('database.php');
         <a href="video.php">Live</a>
         <a href="schedule.php">Schedule</a>
         <a href="sports.php">Sports</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!-- <script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script> -->
         <?php
             if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];
@@ -56,6 +69,7 @@ return false;
 
 <iframe width="100%" height="60" src="https://rss.app/embed/v1/ticker/tcQRPlhiCRlRfCHr" frameborder="0"></iframe>
 <rssapp-wall id="t0bxC6koguPjkh4P"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+<script src="script.js"></script>
 <?php
 require('footer.php');
 ?>
