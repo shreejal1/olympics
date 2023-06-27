@@ -6,20 +6,34 @@ require('database.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Olympics-Home</title>
 </head>
 <body>
     
-    <div class="nav">
-    <div class="logoo">
-    <img id="logoo" src="./images/logoo.png" />
-    </div>
+    <div class="nav" id="myTopnav">
+    <!-- <div class="logoo">
+    <a><img id="logoo" src="./images/logoo.png" /></a>
+    </div> -->
         <a href="home.php" id="clicked">Home</a>
         <a href="news.php">News</a>
         <a href="video.php">Live</a>
         <a href="schedule.php">Schedule</a>
         <a href="sports.php">Sports</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
         <?php
             if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];

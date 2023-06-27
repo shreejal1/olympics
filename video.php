@@ -11,10 +11,10 @@ require('database.php');
 </head>
 <body>
     
-    <div class="nav">
-    <div class="logoo">
+    <div class="nav" id="myTopnav">
+    <!-- <div class="logoo">
     <img id="logoo" src="./images/logoo.png" />
-    </div>
+    </div> -->
         <a href="home.php">Home</a>
         <a href="news.php">News</a>
         <a href="video.php" id="clicked">Live</a>
@@ -76,8 +76,8 @@ if(isset($_POST['submitBtn'])){
 
 <div class="vid">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zMFb8Y2QLPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zMFb8Y2QLPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zMFb8Y2QLPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <div class="centered">

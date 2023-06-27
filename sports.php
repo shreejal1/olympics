@@ -11,10 +11,10 @@ require('database.php');
 </head>
 <body>
     
-    <div class="nav">
-    <div class="logoo">
+    <div class="nav" id="myTopnav">
+    <!-- <div class="logoo">
     <img id="logoo" src="./images/logoo.png" />
-    </div>
+    </div> -->
         <a href="home.php">Home</a>
         <a href="news.php">News</a>
         <a href="video.php">Live</a>
