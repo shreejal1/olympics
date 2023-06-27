@@ -25,7 +25,8 @@ if(isset($_POST['upt'])){
   if($password === $cp){
     $sql = $pdo->query("update user set password = '$password' where username = '$id'");
     if($sql){
-      header("Location: login.php");
+      echo "<script>window.location.href='login.php'</script>";
+      // header("Location: login.php");
       exit();
     }
   }
