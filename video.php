@@ -104,7 +104,7 @@ if(isset($_POST['submitBtn'])){
                 $resultSet = $sql->fetchAll(PDO::FETCH_ASSOC);
                 if($rc > 0){
                     foreach($resultSet as $cmts){
-                    echo "<input type='text' value='".$cmts['user'].": ".$cmts['comment']."' disabled>";
+                    echo "<input type='text' style='width:90%;' value='".$cmts['user'].": ".$cmts['comment']."' disabled>";
                     }
                 }else{
                     echo "No any comment, be the first to comment.";
@@ -114,7 +114,7 @@ if(isset($_POST['submitBtn'])){
         </div>
         <div class="login-container">
 				<form action="" method="POST" id="login-form">
-					<textarea name="comment" id="" cols="50" rows="5" required></textarea>
+					<textarea name="comment" cols="50" rows="5" required style="width:90%;"></textarea>
 
 					<br><button type="submit" name="submitBtn" id="login-btn">Post comment</button>
 				</form>
