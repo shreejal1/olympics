@@ -67,8 +67,10 @@ return false;
 
 
 
-<iframe width="100%" height="60" src="https://rss.app/embed/v1/ticker/tcQRPlhiCRlRfCHr" frameborder="0"></iframe>
-<rssapp-wall id="t0bxC6koguPjkh4P"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+<!-- <iframe width="100%" height="60" src="https://rss.app/embed/v1/ticker/tcQRPlhiCRlRfCHr" frameborder="0"></iframe> -->
+  <rssapp-ticker id="tN5ohoxFsAjmsV0e"></rssapp-ticker><script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
+<!-- <rssapp-wall id="t0bxC6koguPjkh4P"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script> -->
+<rssapp-wall id="tyoL9xab9oLLybaW"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 <script src="script.js"></script>
 <?php
 require('footer.php');
