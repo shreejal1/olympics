@@ -17,17 +17,17 @@
 
 			<div class="footer-center">
 
-				<div>
+				<div class="con">
 					<i class="fa fa-map-marker"></i>
 					<p><span>Devkota Sadak</span>Bagmati, Kathmandu</p>
 				</div>
 
-				<div>
+				<div class="con">
 					<i class="fa fa-phone"></i>
 					<p>+977-9800000000</p>
 				</div>
 
-				<div>
+				<div  class="con">
 					<i class="fa fa-envelope"></i>
 					<p><a href="mailto:support@company.com">support@olympics.com</a></p>
 				</div>

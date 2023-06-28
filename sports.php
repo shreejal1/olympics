@@ -76,11 +76,11 @@ if(isset($_GET['id'])){
    Game Description-'.$rd['name'].'
       <div class="image-container">';
         echo '<img id="namilogo" src="./sports/image'.$rd['id'].'.jpg" />';
-        echo '<h1 class="main-title">'.$rd['name'].'</h1>
+        echo '<h1 class="main-title" style="font-family: trebuchet ms">'.$rd['name'].'</h1>
       </div>
 
     <div class="container">
-        '.$rd['description'].'
+        <h4 style="font-family: trebuchet ms; text-align: justify;">'.$rd['description'].'</h4>
     </div>
     <div class="links">
         <a href="./sports.php">Go back</a>
