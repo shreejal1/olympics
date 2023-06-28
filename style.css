@@ -602,6 +602,19 @@ select.round:focus {
 }
 
 /* media queries */
+
+@media (max-width: 930px) {
+  .footer-left{
+    width: 50%;
+  }
+  .footer-center{
+    width: 50%;
+  }
+
+
+}
+
+
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child) {display: none;}
   .nav a.icon {
@@ -626,6 +639,9 @@ select.round:focus {
 }
 
 @media (max-width: 600px){
+  .footer-left{
+    width: auto;
+  }
   .slideshow {
     max-width: 100%;
     max-height: 50%;
@@ -638,9 +654,10 @@ select.round:focus {
   .footer-distributed{
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .footer-distributed, .footer-left, .footer-center, .footer-right, .footer-company-about{
-    width: 100%;
+    width: auto;
     position: static;
   }
 
